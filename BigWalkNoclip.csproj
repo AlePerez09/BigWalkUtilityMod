@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <AssemblyName>BigWalkNoclip</AssemblyName>
+    <RootNamespace>BigWalkNoclip</RootNamespace>
+    <LangVersion>latest</LangVersion>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <!-- Big Walk install folder. Override with: dotnet build -p:GameDir="D:\SteamLibrary\steamapps\common\Big Walk" -->
+    <GameDir Condition="'$(GameDir)' == ''">C:\Program Files (x86)\Steam\steamapps\common\Big Walk</GameDir>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- BepInEx 6 core + Il2CppInterop -->
+    <Reference Include="$(GameDir)\BepInEx\core\*.dll">
+      <Private>false</Private>
+    </Reference>
+    <!-- Interop assemblies: generated the first time you run the game with BepInEx 6 installed -->
+    <Reference Include="$(GameDir)\BepInEx\interop\*.dll">
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+</Project>
