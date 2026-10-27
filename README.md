@@ -19,8 +19,8 @@ All keys, fly speed and ranges can be changed in `BepInEx/config/com.ale.bigwalk
 ## Install
 
 1. Install **BepInEx 6 bleeding edge, Unity IL2CPP x64**. Big Walk is an IL2CPP game, so BepInEx 5 and the GitHub `6.0.0-pre` releases will not work.
-   - Get it from [builds.bepinex.dev](https://builds.bepinex.dev/projects/bepinex_be) (`BepInEx-Unity.IL2CPP-win-x64-...zip`), or the **BepInExPack IL2CPP** package on Thunderstore.
-   - Extract it into the folder that contains `Big Walk.exe`.
+   - I used the **BepInExPack IL2CPP** package from Thunderstore: [old.thunderstore.io/c/megabonk/p/BepInEx/BepInExPack_IL2CPP](https://old.thunderstore.io/c/megabonk/p/BepInEx/BepInExPack_IL2CPP/). It's listed under another game's page, but it's the same generic BepInEx pack and works for Big Walk.
+   - Click **Manual Download**, extract the zip into its own folder, then copy everything inside its `BepInExPack` folder into the folder that contains `Big Walk.exe`.
 2. Launch the game once and wait for it to reach the main menu (the first launch generates files in `BepInEx/interop/`), then close it.
 3. Put `BigWalkNoclip.dll` in `Big Walk/BepInEx/plugins/`.
 
